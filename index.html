@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFRILEARN | Langues africaines et contenus scientifiques</title>
+  <meta name="description" content="AFRILEARN est une plateforme dédiée à l'apprentissage des langues africaines, à la diffusion de contenus scientifiques multilingues et à la valorisation des patrimoines linguistiques.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="site-meta container">
+      <p class="site-phase">Plateforme d'apprentissage · Langues africaines · Parcours structurés · Usage mobile</p>
+      <div class="lang-switch" aria-label="Choix de langue">
+        <button type="button" class="lang-button" data-lang-switch="fr">FR</button>
+        <button type="button" class="lang-button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+    <div class="nav-row container">
+      <a class="brand" href="index.html" aria-label="Accueil AFRILEARN">
+        <img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN">
+        <span><strong>AFRILEARN</strong><small>Sciences &amp; Langues d'Afrique</small></span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>Menu</button>
+      <nav id="site-menu" class="site-nav" aria-label="Navigation principale" data-site-menu>
+        <a href="index.html" data-nav="home" data-i18n="nav.home">Accueil</a>
+        <a href="langues.html" data-nav="languages" data-i18n="nav.languages">Langues</a>
+        <a href="sciences.html" data-nav="sciences" data-i18n="nav.sciences">Sciences</a>
+        <a href="mediatheque.html" data-nav="media" data-i18n="nav.media">Médiathèque</a>
+        <a href="communaute.html" data-nav="community" data-i18n="nav.community">Communauté</a>
+        <a href="tableau-de-bord.html" data-nav="dashboard" data-i18n="nav.dashboard">Tableau de bord</a>
+        <a href="administration.html" data-nav="admin" data-i18n="nav.admin">Administration</a>
+        <a class="btn btn-primary btn-sm btn-nav-cta" href="authentification.html" data-i18n="nav.login">Se connecter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero hero-home">
+      <div class="hero-bg" data-bg="assets/img/backgrounds/bg-home.jpg" data-parallax></div>
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow" data-i18n="hero.home.eyebrow">Plateforme numérique d'apprentissage et de transmission</p>
+          <h1 data-i18n="hero.home.title">Apprendre des langues africaines avec des parcours clairs, des ressources utiles et un accès mobile.</h1>
+          <p class="hero-text">AFRILEARN réunit apprentissage linguistique, ressources culturelles et contenus scientifiques dans une plateforme pensée pour les apprenants, les familles, les formateurs et les partenaires éducatifs.</p>
+          <div class="button-group">
+            <a class="btn btn-gold" href="authentification.html" data-i18n="cta.start">Créer un compte</a>
+            <a class="btn btn-ghost" href="langues.html" data-i18n="cta.discover">Voir les parcours</a>
+          </div>
+          <div class="hero-pills" role="list" aria-label="Points clés">
+            <span class="pill" role="listitem">Parler · Écouter · Lire · Écrire</span>
+            <span class="pill" role="listitem">Parcours guidés et ressources validées</span>
+            <span class="pill" role="listitem">Consultation mobile et usage faible débit</span>
+          </div>
+          <div class="trust-strip">
+            <article class="trust-item">
+              <strong>Usage concret</strong>
+              <span>Apprendre, réviser, écouter et consulter sans friction.</span>
+            </article>
+            <article class="trust-item">
+              <strong>Contenus structurés</strong>
+              <span>Langues, sciences, médiathèque et pratique communautaire.</span>
+            </article>
+            <article class="trust-item">
+              <strong>Accès par profils</strong>
+              <span>Apprenants, familles, formateurs et équipes éditoriales.</span>
+            </article>
+            <article class="trust-item">
+              <strong>Base extensible</strong>
+              <span>Architecture prête pour de nouvelles langues et ressources.</span>
+            </article>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card" data-reveal>
+            <p>Lancement</p>
+            <strong>Swahili</strong>
+            <span>Premiers parcours complets, ressources audio et base lexicale déjà intégrés.</span>
+          </div>
+          <div class="hero-card" data-reveal>
+            <p>Expérience</p>
+            <strong>Navigation claire, espace membre, progression suivie</strong>
+            <span>Un environnement cohérent pour accéder aux parcours, aux ressources et au suivi personnel.</span>
+          </div>
+          <div class="hero-card hero-card-highlight" data-reveal>
+            <p>Positionnement</p>
+            <strong>Une plateforme éducative structurée autour des langues, des sciences et de la transmission.</strong>
+            <span>Parcours thématiques, accès sécurisés et espaces dédiés aux apprenants, formateurs et partenaires.</span>
+          </div>
+          <div class="hero-illustration-frame" data-reveal>
+            <img src="assets/img/hero-knowledge.svg" alt="Illustration AFRILEARN">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-light">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Vue d'ensemble</p>
+          <h2>Des repères immédiats sur l'état réel de la plateforme</h2>
+          <p>Les indicateurs rendent visibles l'offre actuelle, la profondeur éditoriale et le niveau de préparation des contenus.</p>
+        </div>
+        <p class="data-source-note" data-api-status>Chargement des données...</p>
+        <div class="stats-grid" data-render="stats"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Offre</p>
+          <h2>Quatre piliers pour comprendre rapidement ce que propose AFRILEARN</h2>
+          <p>La plateforme s'organise autour d'usages concrets, avec une séparation plus claire entre découverte publique, apprentissage et espaces membres.</p>
+        </div>
+        <div class="card-grid card-grid-three" data-render="home-highlights"></div>
+      </div>
+    </section>
+
+    <section class="section editorial-band">
+      <div class="container editorial-grid">
+        <div class="editorial-card editorial-card--soft" data-reveal>
+          <p class="eyebrow">Orientation</p>
+          <h2>Une offre lisible, structurée autour des usages essentiels.</h2>
+          <p>AFRILEARN articule l'apprentissage des langues, l'accès aux ressources, le suivi de progression et les espaces de contribution dans un cadre cohérent.</p>
+        </div>
+        <div class="editorial-card" data-reveal>
+          <p class="eyebrow">Priorités éditoriales</p>
+          <ul class="check-list check-list-contrast">
+            <li>Présenter clairement les parcours et les publics visés.</li>
+            <li>Rendre visibles les ressources disponibles et leurs usages pédagogiques.</li>
+            <li>Organiser les espaces publics, membres et administratifs selon leur fonction.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-dark">
+      <div class="container">
+        <div class="section-head section-head-contrast">
+          <p class="eyebrow">Expérience d'apprentissage</p>
+          <h2>Une expérience pensée pour la pratique, la continuité et la confiance</h2>
+          <p>Le service doit rassurer visuellement tout en restant simple à utiliser sur mobile, en contexte familial ou en cadre de formation.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <h3><i class="fa-solid fa-microphone"></i> Parler</h3>
+            <p>Dialogues, répétitions guidées, capsules audio et repères de prononciation.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <h3><i class="fa-solid fa-ear-listen"></i> Écouter</h3>
+            <p>Compréhension orale en contexte, diversité des voix et formats adaptés aux usages mobiles.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <h3><i class="fa-solid fa-book-open"></i> Lire</h3>
+            <p>Contes, textes guidés, lexiques et repères culturels pour approfondir les pratiques de lecture.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <h3><i class="fa-solid fa-pen"></i> Écrire</h3>
+            <p>Exercices ciblés, consolidation grammaticale et suivi par niveau.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Parcours</p>
+          <h2>Les premiers parcours déjà prêts à être consultés ou étendus</h2>
+          <p>Le lancement reste volontairement resserré afin d'assurer une expérience cohérente avant l'élargissement à d'autres langues et disciplines.</p>
+        </div>
+        <div class="card-grid card-grid-three" data-render="languages-home"></div>
+      </div>
+    </section>
+
+    <section class="section surface-light">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Repères</p>
+          <h2>Les éléments structurants de la plateforme</h2>
+          <p>La plateforme s'appuie sur des parcours identifiés, des contenus organisés et des accès différenciés selon les besoins.</p>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-card" data-reveal>
+            <span class="card-phase">Clarté</span>
+            <strong>Une proposition de valeur lisible</strong>
+            <p>L'utilisateur comprend en quelques secondes ce qu'il peut apprendre, consulter et suivre.</p>
+          </article>
+          <article class="proof-card" data-reveal>
+            <span class="card-phase">Organisation</span>
+            <strong>Des espaces adaptés à chaque profil</strong>
+            <p>Le tableau de bord, la médiathèque et l'administration répondent à des fonctions distinctes.</p>
+          </article>
+          <article class="proof-card" data-reveal>
+            <span class="card-phase">Confiance</span>
+            <strong>Des contenus situés et documentés</strong>
+            <p>Indicateurs, niveaux et cas d'usage rendent l'offre plus explicite pour les différents publics.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-split">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Parcours utilisateur</p>
+            <h2>Des parcours adaptés à chaque profil</h2>
+            <p>Chaque public identifie plus facilement ses objectifs, ses ressources utiles et sa manière d'avancer dans la plateforme.</p>
+          </div>
+          <div class="persona-grid">
+            <article class="persona-card" data-reveal>
+              <span class="card-phase">Familles</span>
+              <strong>Transmettre au quotidien</strong>
+              <p>Accéder à des supports simples pour écouter, lire et pratiquer ensemble.</p>
+            </article>
+            <article class="persona-card" data-reveal>
+              <span class="card-phase">Apprenants</span>
+              <strong>Suivre une progression claire</strong>
+              <p>Retrouver les parcours, les ressources utiles et les prochaines étapes sans confusion.</p>
+            </article>
+            <article class="persona-card" data-reveal>
+              <span class="card-phase">Formateurs</span>
+              <strong>Préparer et encadrer</strong>
+              <p>Utiliser la médiathèque, les lexiques et les modules comme base pédagogique cohérente.</p>
+            </article>
+            <article class="persona-card" data-reveal>
+              <span class="card-phase">Partenaires</span>
+              <strong>Évaluer la solidité du projet</strong>
+              <p>Voir une plateforme structurée, crédible et extensible à l'échelle éditoriale.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="visual-panel" style="background-image:linear-gradient(180deg, rgba(28, 23, 18, 0.28), rgba(28, 23, 18, 0.56)), url('assets/img/backgrounds/bg-home.jpg');" data-reveal>
+          <div class="visual-panel-content">
+            <span class="card-phase">Méthode</span>
+            <h3>Découvrir, apprendre, suivre, contribuer</h3>
+            <p>La navigation repose sur des chemins simples et des espaces clairement identifiés selon l'usage.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section surface-light">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Parcours type</p>
+          <h2>Comment un utilisateur avance dans AFRILEARN</h2>
+        </div>
+        <div class="journey-grid">
+          <article class="journey-step" data-step="01" data-reveal>
+            <strong>Découvrir l'offre</strong>
+            <p>Comprendre en quelques secondes ce que la plateforme propose et à qui elle s'adresse.</p>
+          </article>
+          <article class="journey-step" data-step="02" data-reveal>
+            <strong>Entrer dans un parcours</strong>
+            <p>Choisir une langue, consulter les ressources et démarrer un espace membre si nécessaire.</p>
+          </article>
+          <article class="journey-step" data-step="03" data-reveal>
+            <strong>Suivre sa progression</strong>
+            <p>Retrouver ses recommandations, ses activités et les contenus à revoir depuis le tableau de bord.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-light">
+      <div class="container split-grid">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Actualités</p>
+          <h2>Actualités de la plateforme</h2>
+          </div>
+          <div class="stack-list" data-render="news-list"></div>
+        </div>
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Agenda</p>
+          <h2>Agenda des rencontres et activités</h2>
+          </div>
+          <div class="stack-list" data-render="events-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band-grid">
+        <div>
+          <p class="eyebrow">Rejoindre AFRILEARN</p>
+          <h2>Créer un compte, consulter les parcours et participer aux espaces de contribution.</h2>
+        </div>
+        <div class="button-group">
+          <a class="btn btn-gold" href="authentification.html">Créer un compte</a>
+          <a class="btn btn-ghost" href="communaute.html">Rejoindre la communauté</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid section">
+      <div>
+        <a class="brand brand-footer" href="index.html">
+          <img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN">
+          <span><strong>AFRILEARN</strong><small>Transmission linguistique et scientifique</small></span>
+        </a>
+        <p>Plateforme d'apprentissage des langues africaines, de consultation de ressources culturelles et de diffusion de contenus scientifiques accessibles sur mobile.</p>
+        <p class="footer-meta">Positionnement : plateforme éducative, accès par profils, parcours extensibles.</p>
+      </div>
+      <div>
+        <h3>Découvrir</h3>
+        <ul class="footer-links">
+          <li><a href="langues.html">Langues</a></li>
+          <li><a href="sciences.html">Sciences</a></li>
+          <li><a href="mediatheque.html">Médiathèque</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Accès</h3>
+        <ul class="footer-links">
+          <li><a href="communaute.html">Communauté</a></li>
+          <li><a href="authentification.html">Espace membre</a></li>
+          <li><a href="tableau-de-bord.html">Suivi apprenant</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>AFRILEARN © <span data-current-year></span> · Plateforme éducative en structuration depuis l'Est de la RDC.</p>
+    </div>
+  </footer>
+</body>
+</html>

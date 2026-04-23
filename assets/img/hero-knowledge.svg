@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 480" role="img" aria-labelledby="title desc">
+  <title id="title">Illustration AFRILEARN</title>
+  <desc id="desc">Illustration abstraite avec livres, bulles de langue, carte et motifs géométriques.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdf6ea"/>
+      <stop offset="100%" stop-color="#fffdf9"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#c9a227"/>
+      <stop offset="100%" stop-color="#e8a020"/>
+    </linearGradient>
+  </defs>
+  <rect width="620" height="480" rx="32" fill="url(#panel)"/>
+  <circle cx="470" cy="94" r="56" fill="#f6e4a8"/>
+  <circle cx="140" cy="120" r="44" fill="#e8b5aa"/>
+  <path d="M292 84c54-29 117 5 143 59 25 54 8 122-44 157-27 18-60 24-91 19-8-1-15-3-23-6-54-22-88-82-78-140 7-40 33-73 69-89 8-4 16-7 24-9Z" fill="#1a2332" opacity=".06"/>
+  <path d="M298 112c43-23 95 4 115 48 20 44 6 99-35 127-21 14-47 19-72 15-6-1-12-2-18-5-44-17-71-67-63-114 6-33 27-60 56-71 6-3 12-5 17-7Z" fill="#1a2332" opacity=".1"/>
+  <path d="M288 150c34-18 75 3 91 38 16 35 5 79-28 101-17 12-37 15-57 12-5 0-10-2-14-4-35-14-57-53-50-90 5-26 21-47 45-57 4-2 8-3 13-5Z" fill="#1a2332"/>
+  <path d="M305 174c22-12 49 2 59 25 11 23 3 53-19 67-11 8-24 10-37 8-4 0-7-1-10-3-23-9-37-35-32-58 4-17 14-31 29-37 3-1 6-2 10-2Z" fill="#f5f0e7"/>
+  <path d="M88 278h146c11 0 20 9 20 20v98c0 11-9 20-20 20H88c-11 0-20-9-20-20v-98c0-11 9-20 20-20Z" fill="#8b1a1a"/>
+  <path d="M106 266h146c11 0 20 9 20 20v98c0 11-9 20-20 20H106c-11 0-20-9-20-20v-98c0-11 9-20 20-20Z" fill="#c9a227"/>
+  <path d="M124 252h146c11 0 20 9 20 20v98c0 11-9 20-20 20H124c-11 0-20-9-20-20v-98c0-11 9-20 20-20Z" fill="#fdfbf6"/>
+  <rect x="138" y="278" width="84" height="10" rx="5" fill="#1a2332"/>
+  <rect x="138" y="302" width="116" height="10" rx="5" fill="#8f8a82"/>
+  <rect x="138" y="326" width="104" height="10" rx="5" fill="#8f8a82"/>
+  <rect x="138" y="350" width="68" height="10" rx="5" fill="#8f8a82"/>
+  <path d="M402 260h146c11 0 20 9 20 20v122c0 11-9 20-20 20H402c-11 0-20-9-20-20V280c0-11 9-20 20-20Z" fill="#fffdf8"/>
+  <path d="M424 286h102c8 0 15 7 15 15v16c0 8-7 15-15 15H424c-8 0-15-7-15-15v-16c0-8 7-15 15-15Z" fill="#f6e4a8"/>
+  <path d="M439 309c0-13 12-23 27-23s27 10 27 23c0 3 0 5-1 8 12 7 20 19 20 33v13h-92v-13c0-14 8-26 20-33-1-3-1-5-1-8Z" fill="#1a2332"/>
+  <circle cx="466" cy="306" r="18" fill="#fdfbf6"/>
+  <path d="M416 112h108c10 0 18 8 18 18v44c0 10-8 18-18 18h-62l-28 22v-22h-18c-10 0-18-8-18-18v-44c0-10 8-18 18-18Z" fill="#1b6b3a"/>
+  <rect x="427" y="132" width="88" height="8" rx="4" fill="#fdfbf6"/>
+  <rect x="427" y="151" width="76" height="8" rx="4" fill="#fdfbf6"/>
+  <rect x="427" y="170" width="52" height="8" rx="4" fill="#fdfbf6"/>
+  <path d="M118 112h114c10 0 18 8 18 18v40c0 10-8 18-18 18h-20v20l-27-20h-67c-10 0-18-8-18-18v-40c0-10 8-18 18-18Z" fill="#8b1a1a"/>
+  <rect x="130" y="131" width="92" height="8" rx="4" fill="#fdfbf6"/>
+  <rect x="130" y="149" width="78" height="8" rx="4" fill="#fdfbf6"/>
+  <rect x="130" y="167" width="56" height="8" rx="4" fill="#fdfbf6"/>
+  <g transform="translate(298 358)">
+    <rect x="-48" y="-44" width="96" height="88" rx="18" fill="#1a2332"/>
+    <path d="M-18-16h36v32h-36z" fill="url(#accent)"/>
+    <path d="M-28-26h56" stroke="#fdfbf6" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-28 26h56" stroke="#fdfbf6" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g fill="#1a2332" opacity=".14">
+    <path d="m54 74 22-14 22 14-22 14Z"/>
+    <path d="m514 50 22-14 22 14-22 14Z"/>
+    <path d="m556 390 22-14 22 14-22 14Z"/>
+    <path d="m20 398 22-14 22 14-22 14Z"/>
+  </g>
+</svg>

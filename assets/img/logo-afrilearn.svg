@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Logo AFRILEARN</title>
+  <desc id="desc">Monogramme AF dans un écusson stylisé aux couleurs panafricaines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b1a1a"/>
+      <stop offset="100%" stop-color="#1a2332"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f2d06c"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+  <path d="M64 8 109 28v32c0 30-18 48-45 60C37 108 19 90 19 60V28Z" fill="url(#bg)"/>
+  <path d="M64 17 101 34v26c0 25-14 39-37 49C41 99 27 85 27 60V34Z" fill="none" stroke="url(#gold)" stroke-width="4"/>
+  <circle cx="64" cy="54" r="22" fill="#fdfbf6" opacity=".12"/>
+  <path d="M45 76 56 38h6l11 38h-7l-2.1-8h-11.3L50.4 76Zm9.6-14h7.8l-3.9-15.1Z" fill="#f6d57b"/>
+  <path d="M74 38h22v6H81v8h12v6H81v18h-7Z" fill="#f6d57b"/>
+  <path d="M31 92c12-7 21-9 33-9 12 0 21 2 33 9" fill="none" stroke="#1b6b3a" stroke-linecap="round" stroke-width="6"/>
+</svg>

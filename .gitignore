@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+
+*.log
+*.out.log
+*.err.log
+
+data/.secret_key
+data/afrilearn.db
+
+.env
+.env.*

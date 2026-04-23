@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFRILEARN | Tableau de bord</title>
+  <meta name="description" content="Tableau de bord AFRILEARN consacré au suivi d'activité, aux parcours en cours et aux recommandations pédagogiques.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="dashboard">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="site-meta container">
+      <p class="site-phase">Espace apprenant · Suivi d'activité · Recommandations ciblées</p>
+      <div class="lang-switch">
+        <button type="button" class="lang-button" data-lang-switch="fr">FR</button>
+        <button type="button" class="lang-button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+    <div class="nav-row container">
+      <a class="brand" href="index.html"><img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN"><span><strong>AFRILEARN</strong><small>Sciences &amp; Langues d'Afrique</small></span></a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>Menu</button>
+      <nav id="site-menu" class="site-nav" data-site-menu aria-label="Navigation principale">
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="langues.html" data-nav="languages">Langues</a>
+        <a href="sciences.html" data-nav="sciences">Sciences</a>
+        <a href="mediatheque.html" data-nav="media">Médiathèque</a>
+        <a href="communaute.html" data-nav="community">Communauté</a>
+        <a href="tableau-de-bord.html" data-nav="dashboard">Tableau de bord</a>
+        <a href="administration.html" data-nav="admin">Administration</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="hero hero-inner">
+      <div class="hero-bg" data-bg="assets/img/backgrounds/bg-dashboard.jpg" data-parallax></div>
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid hero-grid-tight">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Tableau de bord</p>
+          <h1>Bonjour <span data-user-name>membre</span>, voici votre espace de progression.</h1>
+          <p class="hero-text">Le tableau de bord regroupe vos indicateurs, vos parcours en cours, les contenus à reprendre et les prochaines actions recommandées.</p>
+          <div class="kpi-inline">
+            <article class="trust-item">
+              <strong>Visibilité</strong>
+              <span>Voir rapidement ce qui avance et ce qui doit être repris.</span>
+            </article>
+            <article class="trust-item">
+              <strong>Priorisation</strong>
+              <span>Mettre en avant les prochaines tâches pédagogiques utiles.</span>
+            </article>
+            <article class="trust-item">
+              <strong>Continuité</strong>
+              <span>Retrouver le fil du parcours sans repartir de zéro.</span>
+            </article>
+          </div>
+        </div>
+        <aside class="hero-side-panel" data-reveal>
+          <h2>Repères</h2>
+          <ul class="check-list check-list-contrast">
+            <li>Indicateurs de suivi</li>
+            <li>Parcours en cours</li>
+            <li>Plan de travail hebdomadaire</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Indicateurs</p>
+          <h2>Vue d'ensemble du compte apprenant</h2>
+          <p>Les métriques donnent un aperçu lisible de l'activité récente, de la progression et des jalons déjà atteints.</p>
+        </div>
+        <div class="stats-grid" data-render="dashboard-stats"></div>
+        <div class="page-intro-card">
+          <strong>Objectif du tableau de bord</strong>
+          <p>Cet espace priorise les actions à reprendre, les parcours en cours et les validations récentes afin de faciliter la continuité d'apprentissage.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-light">
+      <div class="container split-grid">
+        <div class="panel">
+          <div class="section-head">
+            <p class="eyebrow">Parcours</p>
+            <h2>Suivi de progression</h2>
+            <p>Chaque parcours affiche son taux d'avancement, son prochain jalon et son périmètre pédagogique.</p>
+          </div>
+          <div class="progress-list" data-render="dashboard-progress"></div>
+        </div>
+        <div class="panel">
+          <div class="section-head">
+            <p class="eyebrow">Semaine</p>
+            <h2>Plan de travail recommandé</h2>
+          <p>Le plan hebdomadaire répartit l'écoute, la lecture et la consolidation en séquences courtes, réalistes et faciles à reprendre.</p>
+          </div>
+          <div class="stack-list" data-render="dashboard-week-plan"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-grid">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Recommandations</p>
+            <h2>Actions prioritaires</h2>
+            <p>Ces recommandations orientent la reprise du parcours, la révision du lexique et l'usage de la médiathèque.</p>
+          </div>
+          <div class="card-grid card-grid-three" data-render="dashboard-recommendations"></div>
+        </div>
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Badges</p>
+            <h2>Compétences validées</h2>
+            <p>Les badges matérialisent les acquis déjà consolidés dans les activités linguistiques et scientifiques.</p>
+          </div>
+          <div class="badge-grid" data-render="badges"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid section">
+      <div><a class="brand brand-footer" href="index.html"><img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN"><span><strong>AFRILEARN</strong><small>Transmission linguistique et scientifique</small></span></a><p>Tableau de bord dédié au suivi d'activité, aux parcours en cours et aux recommandations pédagogiques.</p></div>
+      <div><h3>Continuer</h3><ul class="footer-links"><li><a href="langues.html">Parcours linguistiques</a></li><li><a href="mediatheque.html">Médiathèque</a></li><li><a href="communaute.html">Communauté</a></li></ul></div>
+      <div><h3>Compte</h3><ul class="footer-links"><li><a href="authentification.html">Connexion / inscription</a></li><li><a href="tableau-de-bord.html">Mon suivi</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>AFRILEARN © <span data-current-year></span></p></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFRILEARN | Médiathèque</title>
+  <meta name="description" content="Médiathèque AFRILEARN organisée par formats, thématiques, accès directs et consultation intégrée.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="media">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="site-meta container">
+      <p class="site-phase">Médiathèque · Audio · Vidéo · Textes · Téléchargements</p>
+      <div class="lang-switch"><button type="button" class="lang-button" data-lang-switch="fr">FR</button><button type="button" class="lang-button" data-lang-switch="en">EN</button></div>
+    </div>
+    <div class="nav-row container">
+      <a class="brand" href="index.html"><img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN"><span><strong>AFRILEARN</strong><small>Sciences &amp; Langues d'Afrique</small></span></a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>Menu</button>
+      <nav id="site-menu" class="site-nav" data-site-menu aria-label="Navigation principale">
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="langues.html" data-nav="languages">Langues</a>
+        <a href="sciences.html" data-nav="sciences">Sciences</a>
+        <a href="mediatheque.html" data-nav="media">Médiathèque</a>
+        <a href="communaute.html" data-nav="community">Communauté</a>
+        <a href="tableau-de-bord.html" data-nav="dashboard">Tableau de bord</a>
+        <a href="administration.html" data-nav="admin">Administration</a>
+        <a class="btn btn-primary btn-sm btn-nav-cta" href="authentification.html">Accéder à l'espace</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="hero hero-inner">
+      <div class="hero-bg" data-bg="assets/img/backgrounds/bg-media.jpg" data-parallax></div>
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid hero-grid-tight">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Médiathèque</p>
+          <h1>Une médiathèque organisée par formats, thématiques et usages.</h1>
+          <p class="hero-text">La médiathèque rassemble des ressources audio, vidéo, textuelles et documentaires avec des fonctions de tri, de recherche et de consultation intégrée.</p>
+          <div class="button-group">
+            <a class="btn btn-gold" href="authentification.html">Créer un compte</a>
+            <a class="btn btn-ghost" href="communaute.html">Voir la communauté</a>
+          </div>
+          <div class="page-hero-metrics">
+            <article class="page-hero-metric">
+              <strong>Audio, vidéo, texte</strong>
+              <span>dans une interface uniforme</span>
+            </article>
+            <article class="page-hero-metric">
+              <strong>Recherche rapide</strong>
+              <span>par thème, format et mot-clé</span>
+            </article>
+            <article class="page-hero-metric">
+              <strong>Consultation intégrée</strong>
+              <span>sans sortir du parcours utilisateur</span>
+            </article>
+          </div>
+        </div>
+        <aside class="hero-side-panel" data-reveal>
+          <h2>Fonctions disponibles</h2>
+          <ul class="check-list check-list-contrast">
+            <li>Filtres par formats et catégories</li>
+            <li>Prévisualisation vidéo intégrée</li>
+            <li>Consultation intégrée des ressources</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container media-shell">
+        <div class="section-head">
+          <p class="eyebrow">Sélection</p>
+          <h2>Sélection éditoriale mise en avant</h2>
+        </div>
+        <div data-render="featured-media"></div>
+      </div>
+    </section>
+    <section class="section showcase-band">
+      <div class="container showcase-grid">
+        <div class="showcase-panel">
+          <p class="eyebrow">Orientation documentaire</p>
+          <h2>Une médiathèque structurée pour la consultation, la recherche et la réutilisation pédagogique.</h2>
+          <p>La sélection éditoriale met en avant les ressources les plus utiles tandis que les filtres permettent d'accéder rapidement aux supports adaptés au niveau, au format et au contexte d'usage.</p>
+        </div>
+        <div class="showcase-panel">
+          <ul class="showcase-list">
+            <li>Des formats clairement identifiés dès l'entrée dans la médiathèque.</li>
+            <li>Une hiérarchie éditoriale entre sélection, recherche et bibliothèque.</li>
+            <li>Des accès directs pensés pour un usage mobile et des consultations courtes.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section surface-light">
+      <div class="container">
+        <div class="media-toolbar">
+          <div class="media-toolbar-copy">
+            <p class="eyebrow">Consultation</p>
+            <h2>Accéder rapidement aux ressources</h2>
+            <p>Le tri, la recherche et les accès directs facilitent la consultation des ressources par les apprenants, les contributeurs et les équipes éditoriales.</p>
+          </div>
+          <div class="media-support-links">
+            <a href="authentification.html"><i class="fa-solid fa-user-lock"></i> Espace membre</a>
+            <a href="communaute.html"><i class="fa-solid fa-users"></i> Communauté</a>
+          </div>
+        </div>
+        <div class="section-head">
+          <p class="eyebrow">Explorer</p>
+          <h2>Parcourir la médiathèque</h2>
+          <p>Utilisez les filtres et la recherche pour retrouver rapidement une ressource par format, thème ou mot-clé.</p>
+        </div>
+        <div class="filter-row">
+          <button type="button" class="filter-button is-active" data-filter-button="all">Tous les formats</button>
+          <button type="button" class="filter-button" data-filter-button="video">Vidéo</button>
+          <button type="button" class="filter-button" data-filter-button="audio">Audio</button>
+          <button type="button" class="filter-button" data-filter-button="texte">Texte</button>
+          <button type="button" class="filter-button" data-filter-button="telechargement">Téléchargements</button>
+        </div>
+        <label class="field-label" for="media-search">Recherche</label>
+        <input id="media-search" class="input-field" type="search" placeholder="Titre, thème, format" data-media-search>
+        <p class="data-source-note" data-media-results-meta>Chargement des ressources...</p>
+        <div class="card-grid card-grid-three" data-render="media-library"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head-centered">
+          <p class="eyebrow">Fonctions clés</p>
+          <h2>Les repères d'une médiathèque structurée</h2>
+        </div>
+        <div class="section-accent-grid">
+          <article class="accent-card" data-reveal>
+            <strong>Sélection éditoriale</strong>
+            <p>La mise en avant des ressources prioritaires facilite l'entrée dans les contenus les plus utiles.</p>
+          </article>
+          <article class="accent-card" data-reveal>
+            <strong>Recherche ciblée</strong>
+            <p>Les filtres et la recherche permettent d'identifier rapidement une ressource adaptée à un besoin précis.</p>
+          </article>
+          <article class="accent-card" data-reveal>
+            <strong>Continuité pédagogique</strong>
+            <p>La médiathèque complète les parcours, la communauté et l'espace membre dans une logique d'usage cohérente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container content-split">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Structuration documentaire</p>
+            <h2>Critères de présentation des ressources</h2>
+          </div>
+          <div class="note-list">
+            <article class="note-item" data-reveal>
+              <strong>Un usage identifié</strong>
+              <p>Chaque ressource précise son public, son format et son rôle dans le parcours pédagogique ou documentaire.</p>
+            </article>
+            <article class="note-item" data-reveal>
+              <strong>Un accès direct</strong>
+              <p>Les contenus peuvent être consultés par aperçu intégré ou par ouverture directe du fichier source.</p>
+            </article>
+            <article class="note-item" data-reveal>
+              <strong>Un contexte éditorial</strong>
+              <p>Chaque ressource est replacée dans une logique d'usage, de niveau et de contribution au projet AFRILEARN.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="visual-panel" style="background-image:linear-gradient(180deg, rgba(28, 23, 18, 0.28), rgba(28, 23, 18, 0.56)), url('assets/img/backgrounds/bg-media.jpg');" data-reveal>
+          <div class="visual-panel-content">
+            <span class="card-phase">Consultation</span>
+            <h3>Une présentation uniforme des différents formats</h3>
+            <p>La médiathèque permet la consultation de vidéos, d'audios et de documents dans un cadre homogène sur mobile comme sur desktop.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid section">
+      <div><a class="brand brand-footer" href="index.html"><img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN"><span><strong>AFRILEARN</strong><small>Transmission linguistique et scientifique</small></span></a><p>Médiathèque organisée par formats, catégories, accès directs et consultation intégrée.</p></div>
+      <div><h3>Explorer</h3><ul class="footer-links"><li><a href="langues.html">Langues</a></li><li><a href="sciences.html">Sciences</a></li><li><a href="communaute.html">Communauté</a></li></ul></div>
+      <div><h3>Accès</h3><ul class="footer-links"><li><a href="authentification.html">Espace membre</a></li><li><a href="communaute.html">Communauté</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>AFRILEARN © <span data-current-year></span></p></div>
+  </footer>
+</body>
+</html>

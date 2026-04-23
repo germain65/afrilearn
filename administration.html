@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFRILEARN | Administration</title>
+  <meta name="description" content="Pilotage éditorial, contrôles qualité et priorités de publication AFRILEARN.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="admin">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="site-meta container">
+      <p class="site-phase">Administration restreinte · Pilotage éditorial · Contrôles qualité</p>
+      <div class="lang-switch">
+        <button type="button" class="lang-button" data-lang-switch="fr">FR</button>
+        <button type="button" class="lang-button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+    <div class="nav-row container">
+      <a class="brand" href="index.html"><img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN"><span><strong>AFRILEARN</strong><small>Sciences &amp; Langues d'Afrique</small></span></a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>Menu</button>
+      <nav id="site-menu" class="site-nav" data-site-menu aria-label="Navigation principale">
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="langues.html" data-nav="languages">Langues</a>
+        <a href="sciences.html" data-nav="sciences">Sciences</a>
+        <a href="mediatheque.html" data-nav="media">Médiathèque</a>
+        <a href="communaute.html" data-nav="community">Communauté</a>
+        <a href="tableau-de-bord.html" data-nav="dashboard">Tableau de bord</a>
+        <a href="administration.html" data-nav="admin">Administration</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="hero hero-inner">
+      <div class="hero-bg" data-bg="assets/img/backgrounds/bg-admin.jpg" data-parallax></div>
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid hero-grid-tight">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Administration</p>
+          <h1>Un espace réservé au pilotage éditorial, documentaire et qualité.</h1>
+          <p class="hero-text">Cet espace est réservé aux rôles autorisés. Il rassemble le suivi de publication, la modération, les contrôles qualité et les points d'attention opérationnels de la plateforme.</p>
+          <div class="admin-alert">
+            <strong>Zone restreinte</strong>
+            <p>L'espace administration permet aux équipes autorisées de valider les contenus, sécuriser les accès et suivre les priorités opérationnelles.</p>
+          </div>
+        </div>
+        <aside class="hero-side-panel" data-reveal>
+          <h2>État de la base</h2>
+          <p class="database-note" data-db-summary>Chargement des informations techniques...</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Pilotage</p>
+          <h2>Indicateurs de suivi éditorial</h2>
+          <p>Les métriques synthétisent l'état des contenus, la mobilisation des contributeurs et les priorités de publication en cours.</p>
+        </div>
+        <div class="stats-grid" data-render="admin-metrics"></div>
+      </div>
+    </section>
+
+    <section class="section surface-light">
+      <div class="container split-grid">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Pipeline</p>
+            <h2>Chantiers éditoriaux en cours</h2>
+            <p>Le pipeline expose les contenus en préparation, les ressources à relire et les documents d'appui à consolider avant publication.</p>
+          </div>
+          <div class="card-grid card-grid-three" data-render="admin-pipeline"></div>
+        </div>
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Modération</p>
+            <h2>Points d'attention opérationnels</h2>
+            <p>La modération met en évidence les éléments nécessitant une relecture, une normalisation ou une validation complémentaire.</p>
+          </div>
+          <div class="moderation-list" data-render="moderation-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-dark">
+      <div class="container">
+        <div class="section-head section-head-contrast">
+          <p class="eyebrow">Qualité</p>
+          <h2>Contrôles structurants avant publication</h2>
+          <p>Les contrôles qualité garantissent la cohérence pédagogique, la compatibilité média et la sécurité d'accès sur l'ensemble de la plateforme.</p>
+        </div>
+        <div class="card-grid card-grid-three" data-render="admin-quality-checks"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid section">
+      <div><a class="brand brand-footer" href="index.html"><img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN"><span><strong>AFRILEARN</strong><small>Transmission linguistique et scientifique</small></span></a><p>Espace de suivi des contenus, des contrôles qualité et des priorités de publication.</p></div>
+      <div><h3>Pilotage</h3><ul class="footer-links"><li><a href="tableau-de-bord.html">Tableau de bord</a></li><li><a href="mediatheque.html">Médiathèque</a></li><li><a href="communaute.html">Communauté</a></li></ul></div>
+      <div><h3>Accès</h3><ul class="footer-links"><li><a href="authentification.html">Connexion / inscription</a></li><li><a href="administration.html">Administration</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>AFRILEARN © <span data-current-year></span></p></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFRILEARN | Accès sécurisé</title>
+  <meta name="description" content="Connexion et création de compte sécurisées pour accéder aux espaces AFRILEARN.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="auth">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="site-meta container">
+      <p class="site-phase">Espace membre · Connexion sécurisée · Sessions protégées</p>
+      <div class="lang-switch" aria-label="Choix de langue">
+        <button type="button" class="lang-button" data-lang-switch="fr">FR</button>
+        <button type="button" class="lang-button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+    <div class="nav-row container">
+      <a class="brand" href="index.html" aria-label="Accueil AFRILEARN">
+        <img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN">
+        <span><strong>AFRILEARN</strong><small>Sciences &amp; Langues d'Afrique</small></span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>Menu</button>
+      <nav id="site-menu" class="site-nav" aria-label="Navigation principale" data-site-menu>
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="langues.html" data-nav="languages">Langues</a>
+        <a href="sciences.html" data-nav="sciences">Sciences</a>
+        <a href="mediatheque.html" data-nav="media">Médiathèque</a>
+        <a href="communaute.html" data-nav="community">Communauté</a>
+        <a href="tableau-de-bord.html" data-nav="dashboard">Tableau de bord</a>
+        <a href="administration.html" data-nav="admin">Administration</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="section auth-shell">
+      <div class="container auth-grid">
+        <div class="auth-copy">
+          <p class="eyebrow">Espace membre</p>
+          <h1>Se connecter ou créer un espace AFRILEARN.</h1>
+          <p>L'accès membre ouvre les parcours d'apprentissage, les recommandations personnalisées, les ressources suivies et, selon le rôle, les espaces de contribution ou d'administration.</p>
+
+          <div class="auth-note">
+            <strong>Confiance et discrétion</strong>
+            <p>Les accès de démonstration ne sont pas exposés publiquement. Les sessions utilisent un jeton CSRF, des mots de passe hachés et des droits d'accès par rôle.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card feature-card-plain" data-reveal>
+              <h3>Sécurité</h3>
+              <p>Protection des formulaires, session signée et séparation claire entre accès public et espaces privés.</p>
+            </article>
+            <article class="feature-card feature-card-plain" data-reveal>
+              <h3>Orientation</h3>
+              <p>La connexion redirige l'utilisateur vers son espace de suivi sans détour inutile.</p>
+            </article>
+            <article class="feature-card feature-card-plain" data-reveal>
+              <h3>Profils</h3>
+              <p>Un même point d'entrée pour apprenants, contributeurs et administrateurs autorisés.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="auth-panel">
+          <div class="auth-tabs" role="tablist" aria-label="Authentification">
+            <button type="button" class="auth-tab is-active" data-auth-tab="login" role="tab" aria-selected="true">Connexion</button>
+            <button type="button" class="auth-tab" data-auth-tab="register" role="tab" aria-selected="false">Créer un compte</button>
+          </div>
+
+          <section class="auth-form-section is-active" data-auth-panel="login" aria-label="Formulaire de connexion">
+            <div class="auth-form-head">
+              <h2>Connexion à l'espace personnel</h2>
+              <p class="microcopy">Saisissez vos identifiants pour accéder à vos parcours, à vos ressources et à votre tableau de bord.</p>
+            </div>
+            <form class="form-stack" data-login-form novalidate>
+              <div class="field-group">
+                <label class="field-label" for="login-identifier">Adresse e-mail</label>
+                <input id="login-identifier" class="input-field" name="identifier" type="email" placeholder="nom@organisation.org" autocomplete="email" required>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="login-password">Mot de passe</label>
+                <div class="password-row">
+                  <input id="login-password" class="input-field" name="password" type="password" placeholder="Saisir le mot de passe" autocomplete="current-password" required>
+                  <button type="button" class="password-toggle" data-password-toggle aria-label="Afficher le mot de passe">Afficher</button>
+                </div>
+              </div>
+              <div class="auth-inline-row">
+                <label class="checkbox-field"><input type="checkbox" name="remember"><span>Maintenir la session sur cet appareil</span></label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Accéder à mon espace</button>
+              <p class="form-message" data-login-message aria-live="polite"></p>
+            </form>
+
+            <div class="auth-support-grid">
+              <article class="auth-support-card">
+                <h3>Accès institutionnel</h3>
+                <p>Les comptes partenaires, modération et administration sont activés par l'équipe AFRILEARN après validation.</p>
+              </article>
+              <article class="auth-support-card">
+                <h3>Assistance</h3>
+                <p>Pour toute demande d'accompagnement, rejoignez la <a href="communaute.html">communauté</a> ou revenez à la <a href="mediatheque.html">médiathèque</a>.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="auth-form-section" data-auth-panel="register" aria-label="Formulaire de création de compte">
+            <div class="auth-form-head">
+              <h2>Création de compte</h2>
+              <p class="microcopy">Renseignez les informations essentielles pour ouvrir un espace utilisateur et démarrer les premiers parcours.</p>
+            </div>
+            <form class="form-stack" data-register-form novalidate>
+              <div class="field-group">
+                <label class="field-label" for="register-firstname">Prénom</label>
+                <input id="register-firstname" class="input-field" name="firstName" type="text" placeholder="Prénom de l'utilisateur" autocomplete="given-name" required>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="register-country">Pays</label>
+                <input id="register-country" class="input-field" name="country" type="text" value="RDC" autocomplete="country-name" required>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="register-region">Région ou province</label>
+                <input id="register-region" class="input-field" name="region" type="text" placeholder="Sud-Kivu, Nord-Kivu, Maniema" required>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="register-native">Langue principale</label>
+                <input id="register-native" class="input-field" name="nativeLanguage" type="text" placeholder="Swahili, Mashi, Kilega" required>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="register-email">Adresse e-mail</label>
+                <input id="register-email" class="input-field" name="email" type="email" placeholder="nom@organisation.org" autocomplete="email" required>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="register-password">Mot de passe</label>
+                <div class="password-row">
+                  <input id="register-password" class="input-field" name="password" type="password" minlength="8" placeholder="8 caractères minimum" autocomplete="new-password" required>
+                  <button type="button" class="password-toggle" data-password-toggle aria-label="Afficher le mot de passe">Afficher</button>
+                </div>
+                <p class="field-hint">Utilisez au minimum 8 caractères avec au moins une lettre et un chiffre.</p>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="register-password-confirm">Confirmer le mot de passe</label>
+                <div class="password-row">
+                  <input id="register-password-confirm" class="input-field" name="passwordConfirm" type="password" minlength="8" placeholder="Ressaisir le mot de passe" autocomplete="new-password" required>
+                  <button type="button" class="password-toggle" data-password-toggle aria-label="Afficher le mot de passe">Afficher</button>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Créer le compte</button>
+              <p class="form-message" data-register-message aria-live="polite"></p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid section">
+      <div>
+        <a class="brand brand-footer" href="index.html">
+          <img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN">
+          <span><strong>AFRILEARN</strong><small>Transmission linguistique et scientifique</small></span>
+        </a>
+        <p>Point d'accès sécurisé aux espaces apprenant, contribution et administration selon le rôle attribué.</p>
+      </div>
+      <div>
+        <h3>Découvrir</h3>
+        <ul class="footer-links">
+          <li><a href="langues.html">Parcours linguistiques</a></li>
+          <li><a href="mediatheque.html">Médiathèque</a></li>
+          <li><a href="communaute.html">Communauté</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Espace membre</h3>
+        <ul class="footer-links">
+          <li><a href="tableau-de-bord.html">Suivi apprenant</a></li>
+          <li><a href="authentification.html">Connexion / inscription</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom"><p>AFRILEARN © <span data-current-year></span></p></div>
+  </footer>
+</body>
+</html>

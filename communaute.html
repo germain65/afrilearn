@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFRILEARN | Communauté</title>
+  <meta name="description" content="Espaces communautaires AFRILEARN dédiés à la pratique, aux échanges et à la circulation des contenus.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="community">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="site-meta container">
+      <p class="site-phase">Communauté · Groupes de pratique · Ateliers · Réseau</p>
+      <div class="lang-switch">
+        <button type="button" class="lang-button" data-lang-switch="fr">FR</button>
+        <button type="button" class="lang-button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+    <div class="nav-row container">
+      <a class="brand" href="index.html"><img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN"><span><strong>AFRILEARN</strong><small>Sciences &amp; Langues d'Afrique</small></span></a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>Menu</button>
+      <nav id="site-menu" class="site-nav" data-site-menu aria-label="Navigation principale">
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="langues.html" data-nav="languages">Langues</a>
+        <a href="sciences.html" data-nav="sciences">Sciences</a>
+        <a href="mediatheque.html" data-nav="media">Médiathèque</a>
+        <a href="communaute.html" data-nav="community">Communauté</a>
+        <a href="tableau-de-bord.html" data-nav="dashboard">Tableau de bord</a>
+        <a href="administration.html" data-nav="admin">Administration</a>
+        <a class="btn btn-primary btn-sm btn-nav-cta" href="authentification.html">Accéder à l'espace</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="hero hero-inner">
+      <div class="hero-bg" data-bg="assets/img/backgrounds/bg-community.jpg" data-parallax></div>
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid hero-grid-tight">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Communauté</p>
+          <h1>Des espaces de pratique, d'échange et de contribution.</h1>
+          <p class="hero-text">La communauté AFRILEARN fédère les apprenants, les familles, les contributeurs et les partenaires autour de groupes thématiques, d'ateliers et de discussions éditoriales ou pédagogiques.</p>
+          <div class="button-group">
+            <a class="btn btn-gold" href="authentification.html">Rejoindre l'espace</a>
+            <a class="btn btn-ghost" href="mediatheque.html">Consulter la médiathèque</a>
+          </div>
+          <div class="page-hero-metrics">
+            <article class="page-hero-metric">
+              <strong>Groupes actifs</strong>
+              <span>pour pratique, entraide et contribution</span>
+            </article>
+            <article class="page-hero-metric">
+              <strong>Ateliers</strong>
+              <span>en ligne ou hybrides</span>
+            </article>
+            <article class="page-hero-metric">
+              <strong>Réseau</strong>
+              <span>familles, diaspora, formateurs, linguistes</span>
+            </article>
+          </div>
+        </div>
+        <aside class="hero-side-panel" data-reveal>
+          <h2>Fonctions communautaires</h2>
+          <ul class="check-list check-list-contrast">
+            <li>Pratique orale et échanges entre pairs</li>
+            <li>Partage de ressources et discussions thématiques</li>
+            <li>Rencontres, ateliers et animation de réseau</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Groupes</p>
+          <h2>Espaces de pratique et de contribution</h2>
+          <p>Les groupes structurent les échanges récurrents entre apprenants, modérateurs, contributeurs éditoriaux et relais communautaires.</p>
+        </div>
+        <div class="card-grid card-grid-three" data-render="community-groups"></div>
+        <div class="theme-chip-row">
+          <span class="theme-chip">Pratique orale</span>
+          <span class="theme-chip">Transmission familiale</span>
+          <span class="theme-chip">Contribution média</span>
+          <span class="theme-chip">Réseau diaspora</span>
+        </div>
+      </div>
+    </section>
+    <section class="section showcase-band">
+      <div class="container showcase-grid">
+        <div class="showcase-panel">
+          <p class="eyebrow">Animation du réseau</p>
+          <h2>Une communauté organisée pour pratiquer, échanger et contribuer.</h2>
+          <p>Les espaces communautaires soutiennent la pratique régulière, le partage de ressources et la circulation des retours de terrain entre apprenants, familles et experts.</p>
+        </div>
+        <div class="showcase-panel">
+          <ul class="showcase-list">
+            <li>Des groupes identifiés selon les usages : oral, contenus et transmission familiale.</li>
+            <li>Un forum pour traiter les questions linguistiques, culturelles et terminologiques.</li>
+            <li>Un agenda pour coordonner ateliers, webinaires et rencontres communautaires.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface-light">
+      <div class="container split-grid">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Forum</p>
+            <h2>Sujets actuellement suivis</h2>
+            <p>Les échanges actifs mettent en circulation les questions de langue, les ressources culturelles et les besoins de normalisation terminologique.</p>
+          </div>
+          <div class="card-grid card-grid-three" data-render="forum-topics"></div>
+        </div>
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Agenda</p>
+            <h2>Rencontres et ateliers à venir</h2>
+            <p>L'agenda regroupe les sessions de pratique, les webinaires thématiques et les temps de coordination éditoriale.</p>
+          </div>
+          <div class="stack-list" data-render="events-list"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head-centered">
+          <p class="eyebrow">Apports</p>
+          <h2>La fonction de l'espace communautaire dans la plateforme</h2>
+        </div>
+        <div class="section-accent-grid">
+          <article class="accent-card" data-reveal>
+            <strong>Soutenir la pratique</strong>
+            <p>Les échanges réguliers prolongent l'apprentissage au-delà des contenus consultés individuellement.</p>
+          </article>
+          <article class="accent-card" data-reveal>
+            <strong>Renforcer la confiance</strong>
+            <p>Une communauté active rend visibles les usages, les besoins et les dynamiques de contribution.</p>
+          </article>
+          <article class="accent-card" data-reveal>
+            <strong>Structurer les contributions</strong>
+            <p>Les groupes, forums et ateliers facilitent la remontée des ressources et l'amélioration continue des contenus.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid section">
+      <div><a class="brand brand-footer" href="index.html"><img src="assets/img/logo-afrilearn.svg" alt="Logo AFRILEARN"><span><strong>AFRILEARN</strong><small>Transmission linguistique et scientifique</small></span></a><p>Espaces communautaires dédiés à la pratique, à l'échange et à la circulation des contenus.</p></div>
+      <div><h3>Réseau</h3><ul class="footer-links"><li><a href="mediatheque.html">Médiathèque</a></li><li><a href="authentification.html">Espace membre</a></li><li><a href="langues.html">Parcours</a></li></ul></div>
+      <div><h3>Continuer</h3><ul class="footer-links"><li><a href="tableau-de-bord.html">Suivi apprenant</a></li><li><a href="sciences.html">Sciences</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>AFRILEARN © <span data-current-year></span></p></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "AFRILEARN",
+  "short_name": "AFRILEARN",
+  "description": "Plateforme d'apprentissage des langues africaines et des sciences en langues africaines.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fcf8f0",
+  "theme_color": "#8b1a1a",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
