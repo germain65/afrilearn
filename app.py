@@ -52,7 +52,7 @@ def _is_production_env() -> bool:
 # Config
 # ---------------------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent
-DB_PATH = BASE_DIR / "data" / "afrilearn.db"
+DB_PATH = Path(os.environ.get("AFRILEARN_DB_PATH", str(BASE_DIR / "data" / "afrilearn.db")))
 
 ensure_database(DB_PATH)
 

@@ -117,6 +117,29 @@ http://127.0.0.1:8080/
 - Le frontend seul peut être déployé sur `GitHub Pages`, `Netlify` ou `Vercel`.
 - La version avec base SQLite doit tourner sur un hébergement Python.
 
+### Déploiement Railway
+
+Le dépôt est prêt pour Railway avec [`railway.toml`](/C:/Users/USER/Desktop/afrilearn-site/railway.toml) et `gunicorn`.
+
+Configuration recommandée sur Railway :
+
+- importer le repo GitHub : [https://github.com/germain65/afrilearn](https://github.com/germain65/afrilearn)
+- laisser Railway builder avec `Railpack`
+- start command : `gunicorn app:app --bind 0.0.0.0:$PORT`
+- healthcheck path : `/`
+- ajouter un volume monté par exemple sur `/data`
+- définir la variable : `AFRILEARN_DB_PATH=/data/afrilearn.db`
+
+Variables optionnelles pour un compte démo :
+
+- `AFRILEARN_DEMO_EMAIL`
+- `AFRILEARN_DEMO_PASSWORD`
+- `AFRILEARN_DEMO_FIRST_NAME`
+- `AFRILEARN_DEMO_COUNTRY`
+- `AFRILEARN_DEMO_REGION`
+- `AFRILEARN_DEMO_NATIVE_LANGUAGE`
+- `AFRILEARN_DEMO_ROLE`
+
 ## Notes techniques
 
 - Les données de secours restent dans `assets/js/data.js`.
